@@ -1,4 +1,4 @@
-﻿namespace CampaignSorter.Tests
+﻿namespace CampaignSort.Tests
 {
     [TestFixture]
     public class EndDateComparerTests

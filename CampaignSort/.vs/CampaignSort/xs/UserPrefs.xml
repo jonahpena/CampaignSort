@@ -1,5 +1,55 @@
 ﻿<Properties StartupConfiguration="{708FE743-CDA2-4747-AA3B-3C28AE3266F7}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.CampaignSort PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.CampaingSort.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CampaingSort.Tests/CampaignSorterTests.cs">
+    <Files>
+      <File FileName="CampaignSort/Program.cs" Line="4" Column="1" />
+      <File FileName="CampaignSort/Campaign.cs" Line="5" Column="19" />
+      <File FileName="CampaignSort/NameComparer.cs" Line="12" Column="1" />
+      <File FileName="CampaignSort/CompaignComparerFactory.cs" Line="11" Column="1" />
+      <File FileName="CampaignSort/ICampaignComparer.cs" Line="7" Column="1" />
+      <File FileName="CampaingSort.Tests/NameComparerTests.cs" Line="1" Column="23" />
+      <File FileName="CampaingSort.Tests/StartDateComparerTests.cs" Line="1" Column="23" />
+      <File FileName="CampaingSort.Tests/Usings.cs" Line="3" Column="1" />
+      <File FileName="CampaingSort.Tests/EndDateComparerTests.cs" Line="1" Column="23" />
+      <File FileName="CampaingSort.Tests/TotalBudgetComparerTests.cs" Line="1" Column="23" />
+      <File FileName="CampaingSort.Tests/NumberOfCustomersReachedComparerTests.cs" Line="1" Column="23" />
+      <File FileName="CampaignSort/ComparerClasses/StartDateComparerClass.cs" Line="13" Column="1" />
+      <File FileName="CampaignSort/ComparerClasses/EndDateComparer.cs" Line="13" Column="1" />
+      <File FileName="CampaignSort/ComparerClasses/TotalBudgetComparer.cs" Line="11" Column="1" />
+      <File FileName="CampaignSort/ComparerClasses/NumberOfCustomersReachedComparer.cs" Line="11" Column="1" />
+      <File FileName="CampaingSort.Tests/CampaignComparerFactoryTests.cs" Line="1" Column="23" />
+      <File FileName="CampaignSort/MarketingManager.cs" Line="26" Column="1" />
+      <File FileName="CampaignSort/CampaignSorter.cs" Line="16" Column="38" />
+      <File FileName="CampaingSort.Tests/CampaignSorterTests.cs" Line="89" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CampaignSort" expanded="True">
+            <Node name="CampaignSort" expanded="True">
+              <Node name="CompaignComparerFactory.cs" selected="True" />
+            </Node>
+            <Node name="CampaingSort.Tests" expanded="True">
+              <Node name="ComparerTests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CampaignSort" expanded="True">
+            <Node name="CampaingSort.Tests" expanded="True">
+              <Node name="CampaignSort.Tests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>

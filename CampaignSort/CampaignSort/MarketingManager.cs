@@ -22,6 +22,4 @@ public class MarketingManager
 
         this.campaigns.Sort((c1, c2) => comparer.Compare(c1, c2));
     }
-
-    // Additional methods...
 }

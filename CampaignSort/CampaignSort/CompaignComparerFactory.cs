@@ -8,7 +8,6 @@ public class CampaignComparerFactory
         {
             case "name":
                 return new NameComparer();
-            // Add cases for the new attributes
             default:
                 throw new ArgumentException($"Invalid attribute: {attribute}");
         }
