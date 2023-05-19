@@ -1,4 +1,4 @@
-﻿namespace CampaignSort
+﻿namespace CampaignSort.ComparerClasses
 {
     public class TotalBudgetComparer : ICampaignComparer
     {

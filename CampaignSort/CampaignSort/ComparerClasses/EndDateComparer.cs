@@ -1,6 +1,5 @@
 ﻿using System;
-
-namespace CampaignSort
+namespace CampaignSort.ComparerClasses
 {
     public class EndDateComparer : ICampaignComparer
     {

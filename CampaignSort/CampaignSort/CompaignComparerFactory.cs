@@ -1,4 +1,6 @@
-﻿namespace CampaignSort;
+﻿using CampaignSort.ComparerClasses;
+
+namespace CampaignSort;
 
 public class CampaignComparerFactory
 {

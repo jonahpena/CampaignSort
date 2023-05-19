@@ -1,10 +1,10 @@
 ﻿namespace CampaignSort.ComparerClasses
 {
-    public class StartDateComparer : ICampaignComparer
+    public class ConversionRateComparer : ICampaignComparer
     {
         public int Compare(Campaign x, Campaign y)
         {
-            return DateTime.Compare(x.StartDate, y.StartDate);
+            return x.ConversionRate.CompareTo(y.ConversionRate);
         }
     }
 }

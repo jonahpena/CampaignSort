@@ -1,19 +1,18 @@
-﻿using NUnit.Framework;
-using CampaignSort;
 using CampaignSort.ComparerClasses;
+using NUnit.Framework;
 
-namespace CampaignSorter.Tests
+namespace CampaignSort.Tests
 {
     [TestFixture]
-    public class TotalBudgetComparerTests
+    public class ReturnOnInvestmentComparerTests
     {
         [Test]
         public void TestCompare()
         {
-            var campaign1 = new Campaign { TotalBudget = 1000 };
-            var campaign2 = new Campaign { TotalBudget = 2000 };
+            var campaign1 = new Campaign { ReturnOnInvestment = 5.5 };
+            var campaign2 = new Campaign { ReturnOnInvestment = 6.5 };
 
-            var comparer = new TotalBudgetComparer();
+            var comparer = new ReturnOnInvestmentComparer();
             Assert.That(comparer.Compare(campaign1, campaign2), Is.LessThan(0));
             Assert.That(comparer.Compare(campaign2, campaign1), Is.GreaterThan(0));
         }
