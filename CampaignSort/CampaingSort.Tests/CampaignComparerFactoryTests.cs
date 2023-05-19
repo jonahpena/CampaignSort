@@ -1,16 +1,9 @@
-﻿using CampaignSort;
-using NUnit.Framework;
-using System;
-
-
-namespace CampaignSorter.Tests
+﻿namespace CampaignSorter.Tests
 {
-
 
     [TestFixture]
     public class CampaignComparerFactoryTests
     {
-
 
         [Test]
         public void TestInvalidAttribute()

@@ -1,6 +1,4 @@
-﻿using CampaignSort;
-
-namespace CampaignSorter.Tests
+﻿namespace CampaignSorter.Tests
 {
     [TestFixture]
     public class NameComparerTests

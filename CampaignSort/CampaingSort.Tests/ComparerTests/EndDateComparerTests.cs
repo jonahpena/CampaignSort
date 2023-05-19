@@ -1,8 +1,4 @@
-﻿using NUnit.Framework;
-using System;
-using CampaignSort;
-
-namespace CampaignSorter.Tests
+﻿namespace CampaignSorter.Tests
 {
     [TestFixture]
     public class EndDateComparerTests

@@ -1,7 +1,4 @@
-﻿using NUnit.Framework;
-using CampaignSort;
-
-namespace CampaignSorter.Tests
+﻿namespace CampaignSorter.Tests
 {
     [TestFixture]
     public class TotalBudgetComparerTests
