@@ -19,4 +19,10 @@
   <ItemGroup>
     <ProjectReference Include="..\CampaignSort\CampaignSort.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="ComparerTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ComparerTests\" />
+  </ItemGroup>
 </Project>

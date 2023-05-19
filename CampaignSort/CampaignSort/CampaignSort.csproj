@@ -10,4 +10,10 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.0" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="ComparerClasses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ComparerClasses\" />
+  </ItemGroup>
 </Project>
