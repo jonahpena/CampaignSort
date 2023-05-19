@@ -1,0 +1,5 @@
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Tests/obj/Debug/net6.0/CampaignSort.Tests.csproj.AssemblyReference.cache
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Tests/obj/Debug/net6.0/CampaignSort.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Tests/obj/Debug/net6.0/CampaignSort.Tests.AssemblyInfoInputs.cache
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Tests/obj/Debug/net6.0/CampaignSort.Tests.AssemblyInfo.cs
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Tests/obj/Debug/net6.0/CampaignSort.Tests.csproj.CoreCompileInputs.cache

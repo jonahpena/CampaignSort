@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "yjWX65dX04DJs8Fz/218z0WExTiDxnArXCPcysuIi2uVOVmtYLVuK/aPlI9LDGYvn7ID8uk9z4zzyovt8vs3QA==",
+  "success": true,
+  "projectFilePath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Tests/CampaignSort.Tests.csproj",
+  "expectedPackageFiles": [
+    "/Users/jonahpena/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/jonahpena/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
+    "/Users/jonahpena/.nuget/packages/nunit/3.13.0/nunit.3.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

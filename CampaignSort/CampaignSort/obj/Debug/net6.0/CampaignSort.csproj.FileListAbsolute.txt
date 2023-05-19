@@ -1,0 +1,17 @@
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/bin/Debug/net6.0/CampaignSort
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/bin/Debug/net6.0/CampaignSort.deps.json
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/bin/Debug/net6.0/CampaignSort.runtimeconfig.json
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/bin/Debug/net6.0/CampaignSort.dll
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/bin/Debug/net6.0/CampaignSort.pdb
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/bin/Debug/net6.0/nunit.framework.dll
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.csproj.AssemblyReference.cache
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.AssemblyInfoInputs.cache
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.AssemblyInfo.cs
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.csproj.CoreCompileInputs.cache
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.csproj.CopyComplete
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.dll
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/refint/CampaignSort.dll
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.pdb
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/CampaignSort.genruntimeconfig.cache
+/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/obj/Debug/net6.0/ref/CampaignSort.dll
