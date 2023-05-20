@@ -25,5 +25,44 @@ public class IUserInputInterfaceTests
         Assert.Contains(4, selection);
     }
 
+    [Test]
+    public void TestGetCampaignSelectionOutOfOrder()
+    {
+        var inputInterface = new MockUserInputInterface(new List<int> { 4, 0, 2 }, new List<int>());
+        var selection = inputInterface.GetCampaignSelection(6);
+
+        Assert.That(selection.Count, Is.EqualTo(3));
+        Assert.Contains(0, selection);
+        Assert.Contains(2, selection);
+        Assert.Contains(4, selection);
+    }
+
+    [Test]
+    public void TestGetCampaignSelectionWithDuplicates()
+    {
+        var inputInterface = new MockUserInputInterface(new List<int> { 0, 0, 2, 2, 4, 4 }, new List<int>());
+        var selection = inputInterface.GetCampaignSelection(6);
+
+1,        Assert.That(selection.Count, Is.EqualTo(3)); // Assumes the selection should contain unique numbers
+        Assert.Contains(0, selection);
+        Assert.Contains(2, selection);
+        Assert.Contains(4, selection);
+    }
+
+    [Test]
+    public void TestGetCampaignSelectionWithInvalidNumber()
+    {
+        var inputInterface = new MockUserInputInterface(new List<int> { 0, 6 }, new List<int>());
+        Assert.Throws<IndexOutOfRangeException>(() => inputInterface.GetCampaignSelection(6));
+    }
+
+    [Test]
+    public void TestGetCampaignSelectionCheckOrder()
+    {
+        var inputInterface = new MockUserInputInterface(new List<int> { 4, 0, 2 }, new List<int>());
+        var selection = inputInterface.GetCampaignSelection(6);
+
+        Assert.That(selection, Is.EquivalentTo(new List<int> { 0, 2, 4 }));
+    }
     
 }
