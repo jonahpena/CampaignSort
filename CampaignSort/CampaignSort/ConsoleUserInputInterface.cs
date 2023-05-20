@@ -5,12 +5,13 @@ using System;
 
 public class ConsoleUserInputInterface : IUserInputInterface
 {
-    
+
     public List<int> GetCampaignSelection(int numberOfCampaigns)
     {
         while (true)
         {
-            Console.WriteLine("\nEnter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
+            Console.WriteLine(
+                "\nEnter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
 
             string input = Console.ReadLine();
 
@@ -23,8 +24,9 @@ public class ConsoleUserInputInterface : IUserInputInterface
                 else
                 {
                     List<int> selection = input.Split(',')
-                                        .Select(s => int.Parse(s.Trim()) - 1)
-                                        .ToList();
+                        .Select(s => int.Parse(s.Trim()) - 1)
+                        .Distinct() // <--- remove duplicates
+                        .ToList();
 
                     if (selection.All(i => i >= 0 && i < numberOfCampaigns))
                         return selection;
@@ -73,7 +75,6 @@ public class ConsoleUserInputInterface : IUserInputInterface
 
     public List<int> GetAttributeSelection(int numberOfAttributes)
     {
-        
         while (true)
         {
             Console.WriteLine("\nSelect additional attributes to display (separate by comma, or 'all'):");
@@ -89,8 +90,9 @@ public class ConsoleUserInputInterface : IUserInputInterface
                 else
                 {
                     List<int> selection = input.Split(',')
-                                        .Select(x => int.Parse(x.Trim()) - 1)
-                                        .ToList();
+                        .Select(x => int.Parse(x.Trim()) - 1)
+                        .Distinct() // This line removes duplicates
+                        .ToList();
 
                     if (selection.All(i => i >= 0 && i < numberOfAttributes))
                         return selection;
@@ -108,4 +110,5 @@ public class ConsoleUserInputInterface : IUserInputInterface
             }
         }
     }
+
 }

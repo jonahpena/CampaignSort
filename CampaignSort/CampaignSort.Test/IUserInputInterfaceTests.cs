@@ -43,7 +43,7 @@ public class IUserInputInterfaceTests
         var inputInterface = new MockUserInputInterface(new List<int> { 0, 0, 2, 2, 4, 4 }, new List<int>());
         var selection = inputInterface.GetCampaignSelection(6);
 
-1,        Assert.That(selection.Count, Is.EqualTo(3)); // Assumes the selection should contain unique numbers
+        Assert.That(selection.Count, Is.EqualTo(3)); // Assumes the selection should contain unique numbers
         Assert.Contains(0, selection);
         Assert.Contains(2, selection);
         Assert.Contains(4, selection);

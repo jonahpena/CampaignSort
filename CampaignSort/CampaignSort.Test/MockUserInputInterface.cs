@@ -11,7 +11,23 @@ public class MockUserInputInterface : IUserInputInterface
 
     public List<int> GetCampaignSelection(int numberOfCampaigns)
     {
-        return mockCampaignSelection;
+        // Validate inputs and remove duplicates
+        var validCampaignSelection = new List<int>();
+
+        foreach (int campaign in mockCampaignSelection)
+        {
+            if (campaign < 0 || campaign >= numberOfCampaigns)
+            {
+                throw new IndexOutOfRangeException("Invalid campaign number");
+            }
+
+            if (!validCampaignSelection.Contains(campaign))
+            {
+                validCampaignSelection.Add(campaign);
+            }
+        }
+
+        return validCampaignSelection;
     }
 
     public List<int> GetAttributeSelection(int numberOfAttributes)
