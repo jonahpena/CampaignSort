@@ -1,6 +1,6 @@
 ﻿using CampaignSort.ComparerClasses;
 
-namespace CampaingnSort.Tests
+namespace CampaignSort.Tests.ComparerTests
 {
     [TestFixture]
     public class EndDateComparerTests

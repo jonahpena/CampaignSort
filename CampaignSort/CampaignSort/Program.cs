@@ -9,7 +9,10 @@ namespace CampaignSort
         static void Main(string[] args)
         {
             IUserInputInterface userInput = new ConsoleUserInputInterface();
+            
+            int numberOfAttributes = typeof(Campaign).GetProperties().Length;
 
+            
             // Initialize your campaigns
             List<Campaign> allCampaigns = new List<Campaign>
             {
@@ -145,11 +148,11 @@ namespace CampaignSort
             CampaignComparerFactory factory = new CampaignComparerFactory();
 
             // Get the selected attribute for sorting
-            int sortingAttributeIndex = userInput.GetSortingAttribute(allCampaigns.Count);
+            int sortingAttributeIndex = userInput.GetSortingAttribute(numberOfAttributes);
             string sortingAttribute = attributes[sortingAttributeIndex];
 
             // Get the selected additional attributes for display
-            List<int> attributeSelectionIndices = userInput.GetAttributeSelection(allCampaigns.Count);
+            List<int> attributeSelectionIndices = userInput.GetAttributeSelection(numberOfAttributes);
             List<string> attributeSelection = attributeSelectionIndices.Select(i => attributes[i]).ToList();
 
             // Add the sorting attribute to the display list if it's not already there

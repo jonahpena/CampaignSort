@@ -5,7 +5,7 @@ VisualStudioVersion = 25.0.1705.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignSort", "CampaignSort\CampaignSort.csproj", "{708FE743-CDA2-4747-AA3B-3C28AE3266F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaingSort.Tests", "CampaingSort.Tests\CampaingSort.Tests.csproj", "{CFEE4592-D9B9-40A6-AE17-682FD976C7B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignSort.Test", "CampaignSort.Test\CampaignSort.Test.csproj", "{CFEE4592-D9B9-40A6-AE17-682FD976C7B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

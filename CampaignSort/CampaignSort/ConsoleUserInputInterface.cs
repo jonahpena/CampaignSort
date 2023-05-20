@@ -5,6 +5,7 @@ using System;
 
 public class ConsoleUserInputInterface : IUserInputInterface
 {
+    
     public List<int> GetCampaignSelection(int numberOfCampaigns)
     {
         while (true)
@@ -72,6 +73,7 @@ public class ConsoleUserInputInterface : IUserInputInterface
 
     public List<int> GetAttributeSelection(int numberOfAttributes)
     {
+        
         while (true)
         {
             Console.WriteLine("\nSelect additional attributes to display (separate by comma, or 'all'):");

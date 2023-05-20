@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eB06DAKln8EOfF2TuXJBJeBxWgBIYpsHNVEfg1Vn6mYmJczH1QkZClU4uNSS5GNvpfLXgLd4YYZXv+DZ1/ZGOQ==",
+  "dgSpecHash": "3uARC00uShQkOSmbtcyLwcgSMaG+pBjSsz9n239NpNx/RW7OiqruyfyUCYkNT1AAy42xg4XhWXa255eM42OkDQ==",
   "success": true,
-  "projectFilePath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaingSort.Tests/CampaingSort.Tests.csproj",
+  "projectFilePath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Test/CampaignSort.Test.csproj",
   "expectedPackageFiles": [
     "/Users/jonahpena/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/Users/jonahpena/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",

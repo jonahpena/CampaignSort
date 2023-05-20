@@ -1,7 +1,6 @@
 using CampaignSort.ComparerClasses;
-using NUnit.Framework;
 
-namespace CampaignSort.Tests
+namespace CampaignSort.Tests.ComparerTests
 {
     [TestFixture]
     public class ConversionRateComparerTests

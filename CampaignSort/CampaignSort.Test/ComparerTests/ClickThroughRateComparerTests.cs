@@ -1,6 +1,6 @@
 using CampaignSort.ComparerClasses;
 
-namespace CampaignSort.Tests
+namespace CampaignSort.Test.ComparerTests
 {
     [TestFixture]
     public class ClickThroughRateComparerTests

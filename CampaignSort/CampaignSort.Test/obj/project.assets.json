@@ -3992,11 +3992,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaingSort.Tests/CampaingSort.Tests.csproj",
-      "projectName": "CampaingSort.Tests",
-      "projectPath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaingSort.Tests/CampaingSort.Tests.csproj",
+      "projectUniqueName": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Test/CampaignSort.Test.csproj",
+      "projectName": "CampaignSort.Test",
+      "projectPath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Test/CampaignSort.Test.csproj",
       "packagesPath": "/Users/jonahpena/.nuget/packages/",
-      "outputPath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaingSort.Tests/obj/",
+      "outputPath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jonahpena/.nuget/NuGet/NuGet.Config"
