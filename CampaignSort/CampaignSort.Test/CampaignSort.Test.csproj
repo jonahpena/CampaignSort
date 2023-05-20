@@ -24,7 +24,4 @@
   <ItemGroup>
     <None Remove="ComparerTests\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ComparerTests\" />
-  </ItemGroup>
 </Project>
