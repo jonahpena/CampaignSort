@@ -35,7 +35,7 @@ git clone https://github.com/jonahpena/CampaignSort.git
 ```
 2. Navigate to the project directory:
 ```sh
-cd CampaignSort
+cd CampaignSort/CampaignSort/CampaignSort
 ```
 3. Build the project:
 ```sh
