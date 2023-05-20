@@ -4,7 +4,7 @@ public class ConsoleUserInputInterface : IUserInputInterface
 {
     public List<int> GetCampaignSelection()
     {
-        Console.WriteLine("Enter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
+        Console.WriteLine("\nEnter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
         string input = Console.ReadLine();
         
         if (input.ToLower() == "all")
@@ -19,14 +19,14 @@ public class ConsoleUserInputInterface : IUserInputInterface
     
     public int GetSortingAttribute()
     {
-        Console.WriteLine("Please select an attribute to sort by:");
+        Console.WriteLine("\nSelect an attribute to sort by:");
         string input = Console.ReadLine();
         return int.Parse(input) - 1; // Subtract 1 to get zero-based index
     }
     
     public List<int> GetAttributeSelection()
     {
-        Console.WriteLine("Please select additional attributes to display (separate by comma, or 'all'):");
+        Console.WriteLine("\nSelect additional attributes to display (separate by comma, or 'all'):");
         string input = Console.ReadLine();
 
         if (input.ToLower() == "all")
