@@ -1,8 +1,3 @@
-using CampaignSort;
-using System.Collections.Generic;
-using System.Linq;
-using System;
-
 public class ConsoleUserInputInterface : IUserInputInterface
 {
 
@@ -13,7 +8,7 @@ public class ConsoleUserInputInterface : IUserInputInterface
             Console.WriteLine(
                 "\nEnter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
 
-            string input = Console.ReadLine();
+            var input = Console.ReadLine() ?? string.Empty;
 
             try
             {
@@ -51,8 +46,8 @@ public class ConsoleUserInputInterface : IUserInputInterface
         {
             Console.WriteLine("\nSelect an attribute to sort by:");
 
-            string input = Console.ReadLine();
-
+            var input = Console.ReadLine() ?? string.Empty;
+            
             try
             {
                 int index = int.Parse(input) - 1; // Subtract 1 to get zero-based index
@@ -79,8 +74,8 @@ public class ConsoleUserInputInterface : IUserInputInterface
         {
             Console.WriteLine("\nSelect additional attributes to display (separate by comma, or 'all'):");
 
-            string input = Console.ReadLine();
-
+            var input = Console.ReadLine() ?? string.Empty;
+            
             try
             {
                 if (input.ToLower() == "all")
