@@ -1,5 +1,4 @@
 using CampaignSort.ComparerClasses;
-using NUnit.Framework;
 
 namespace CampaignSort.Tests
 {

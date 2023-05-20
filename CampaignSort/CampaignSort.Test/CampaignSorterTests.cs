@@ -18,8 +18,9 @@ namespace CampaignSort.Tests
             var sorter = new CampaignSorter();
             var sortedCampaigns = sorter.Sort(campaigns, comparer);
 
-            Assert.AreEqual(campaign2, sortedCampaigns[0]);
-            Assert.AreEqual(campaign1, sortedCampaigns[1]);
+            Assert.That(sortedCampaigns[0], Is.EqualTo(campaign2));
+            Assert.That(sortedCampaigns[1], Is.EqualTo(campaign1));
+            
         }
 
         [Test]
@@ -34,8 +35,8 @@ namespace CampaignSort.Tests
             var sorter = new CampaignSorter();
             var sortedCampaigns = sorter.Sort(campaigns, comparer);
 
-            Assert.AreEqual(campaign2, sortedCampaigns[0]);
-            Assert.AreEqual(campaign1, sortedCampaigns[1]);
+            Assert.That(sortedCampaigns[0], Is.EqualTo(campaign2));
+            Assert.That(sortedCampaigns[1], Is.EqualTo(campaign1));
         }
 
         [Test]
@@ -50,8 +51,8 @@ public void TestSortByEndDate()
     var sorter = new CampaignSorter();
     var sortedCampaigns = sorter.Sort(campaigns, comparer);
 
-    Assert.AreEqual(campaign2, sortedCampaigns[0]);
-    Assert.AreEqual(campaign1, sortedCampaigns[1]);
+    Assert.That(sortedCampaigns[0], Is.EqualTo(campaign2));
+    Assert.That(sortedCampaigns[1], Is.EqualTo(campaign1));
 }
 
 
@@ -67,8 +68,8 @@ public void TestSortByEndDate()
             var sorter = new CampaignSorter();
             var sortedCampaigns = sorter.Sort(campaigns, comparer);
 
-            Assert.AreEqual(campaign2, sortedCampaigns[0]);
-            Assert.AreEqual(campaign1, sortedCampaigns[1]);
+            Assert.That(sortedCampaigns[0], Is.EqualTo(campaign2));
+            Assert.That(sortedCampaigns[1], Is.EqualTo(campaign1));
         }
 
         [Test]
@@ -83,8 +84,8 @@ public void TestSortByEndDate()
             var sortedCampaigns = sorter.Sort(campaigns, comparer);
 
 
-            Assert.AreEqual(campaign2, sortedCampaigns[0]);
-            Assert.AreEqual(campaign1, sortedCampaigns[1]);
+            Assert.That(sortedCampaigns[0], Is.EqualTo(campaign2));
+            Assert.That(sortedCampaigns[1], Is.EqualTo(campaign1));
         }
     }
 }
