@@ -48,9 +48,9 @@ dotnet run
 
 ## Usage
 
-Upon running the application, it will initially display a list of marketing campaigns. Input the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns. 
+Upon running the application, it will initially display a list of marketing campaigns. Input the number(s) of the campaigns you're interested in, separated by commas, or input 'all' to select all campaigns. 
 
-Following that, it will present a list of attributes. You'll be asked to select an attribute to sort by, and then to choose additional attributes for display.
+Following, it will present a list of attributes. You'll be asked to select an attribute to sort by, and then to choose additional attributes for display.
 
 Once your selections have been made, the application will display your selected campaigns, sorted by the chosen attribute, and listing the attributes you selected.
 
