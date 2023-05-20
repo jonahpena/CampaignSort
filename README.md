@@ -7,6 +7,7 @@
 2. [Getting Started](#getting-started)
 3. [Usage](#usage)
 4. [Development](#development)
+    - [Running Tests](#running-tests)
     - [Adding a new attribute](#adding-a-new-attribute)
     - [Adding a new campaign](#adding-a-new-campaign)
 5. [Technology Stack](#technology-stack)
@@ -30,11 +31,11 @@ The Marketing Campaign Sorter is a console-based application developed in C#. It
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/jonahpena/CampaignSort.git
 ```
 2. Navigate to the project directory:
 ```sh
-cd Project-Name
+cd CampaignSort
 ```
 3. Build the project:
 ```sh
@@ -54,6 +55,14 @@ Following that, it will present a list of attributes. You'll be asked to select 
 Once your selections have been made, the application will display your selected campaigns, sorted by the chosen attribute, and listing the attributes you selected.
 
 ## Development
+
+### Running Tests
+
+This project uses NUnit for testing. To run the tests, navigate to the test project directory and use the following command:
+
+```sh
+dotnet test
+
 
 ### Adding a new attribute
 
@@ -122,11 +131,22 @@ foreach (var campaign in campaigns)
 
 ## Contributions
 
-Contributions are always welcome! 
+Contributions are what make the open-source community such an incredible place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+Please make sure to update tests as appropriate. Also, ensure your code adheres to the existing coding standards within the project to make the integration process smoother.
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact Information
+If you have any questions, concerns, or would like to collaborate on this project, please feel free to reach out:
 
+- Email: jonahrpena@gmail.com
+- LinkedIn: Jonah Pena
