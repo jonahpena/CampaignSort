@@ -1,7 +1,6 @@
 public interface IUserInputInterface
 {
-    List<int> GetCampaignSelection();
-    List<int> GetAttributeSelection();
-    
-    int GetSortingAttribute();
+    List<int> GetCampaignSelection(int numberOfCampaigns);
+    int GetSortingAttribute(int numberOfAttributes);
+    List<int> GetAttributeSelection(int numberOfAttributes);
 }

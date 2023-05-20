@@ -4,6 +4,7 @@ using System.Reflection;
 namespace CampaignSort
 {
     class Program
+    
     {
         static void Main(string[] args)
         {
@@ -113,9 +114,11 @@ namespace CampaignSort
             }
 
             // Get the selected campaigns
-            List<int> campaignSelection = userInput.GetCampaignSelection();
+            List<int> campaignSelection = userInput.GetCampaignSelection(allCampaigns.Count);
             List<Campaign> campaigns = campaignSelection.Select(i => allCampaigns[i]).ToList();
 
+            
+            
             // Define the attributes
             List<string> attributes = new List<string>
             {
@@ -142,11 +145,11 @@ namespace CampaignSort
             CampaignComparerFactory factory = new CampaignComparerFactory();
 
             // Get the selected attribute for sorting
-            int sortingAttributeIndex = userInput.GetSortingAttribute();
+            int sortingAttributeIndex = userInput.GetSortingAttribute(allCampaigns.Count);
             string sortingAttribute = attributes[sortingAttributeIndex];
 
             // Get the selected additional attributes for display
-            List<int> attributeSelectionIndices = userInput.GetAttributeSelection();
+            List<int> attributeSelectionIndices = userInput.GetAttributeSelection(allCampaigns.Count);
             List<string> attributeSelection = attributeSelectionIndices.Select(i => attributes[i]).ToList();
 
             // Add the sorting attribute to the display list if it's not already there
@@ -160,6 +163,8 @@ namespace CampaignSort
 
             // Sort and display the campaigns
             SortAndDisplayCampaigns(campaigns, comparer, attributeSelection);
+            
+            
         }
 
         private static void SortAndDisplayCampaigns(List<Campaign> campaigns, ICampaignComparer comparer, List<string> attributeSelection)

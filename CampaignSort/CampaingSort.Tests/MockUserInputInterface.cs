@@ -9,17 +9,17 @@ public class MockUserInputInterface : IUserInputInterface
         mockAttributeSelection = attributeSelection;
     }
 
-    public List<int> GetCampaignSelection()
+    public List<int> GetCampaignSelection(int numberOfCampaigns)
     {
         return mockCampaignSelection;
     }
 
-    public List<int> GetAttributeSelection()
+    public List<int> GetAttributeSelection(int numberOfAttributes)
     {
-        return Enumerable.Range(0, 12).ToList(); // This will select all attributes in a test environment
+        return mockAttributeSelection;
     }
 
-    public int GetSortingAttribute()
+    public int GetSortingAttribute(int numberOfAttributes)
     {
         return 0;
     }

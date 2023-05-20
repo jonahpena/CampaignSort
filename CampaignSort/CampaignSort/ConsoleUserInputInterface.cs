@@ -1,47 +1,109 @@
 using CampaignSort;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 
 public class ConsoleUserInputInterface : IUserInputInterface
 {
-    public List<int> GetCampaignSelection()
+    public List<int> GetCampaignSelection(int numberOfCampaigns)
     {
-        Console.WriteLine("\nEnter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
-        string input = Console.ReadLine();
-        
-        if (input.ToLower() == "all")
+        while (true)
         {
-            return Enumerable.Range(0, 6).ToList(); // assume there are 6 campaigns
-        }
-        else
-        {
-            return input.Split(',').Select(s => int.Parse(s.Trim()) - 1).ToList();
-        }
-    }
-    
-    public int GetSortingAttribute()
-    {
-        Console.WriteLine("\nSelect an attribute to sort by:");
-        string input = Console.ReadLine();
-        return int.Parse(input) - 1; // Subtract 1 to get zero-based index
-    }
-    
-    public List<int> GetAttributeSelection()
-    {
-        Console.WriteLine("\nSelect additional attributes to display (separate by comma, or 'all'):");
-        string input = Console.ReadLine();
+            Console.WriteLine("\nEnter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
 
-        if (input.ToLower() == "all")
-        {
-            // Return a list with all indices
-            return Enumerable.Range(0, 12).ToList();
-        }
-        else
-        {
-            // Convert input into list of integers
-            return input.Split(", ").Select(x => int.Parse(x) - 1).ToList(); // Subtract 1 to get zero-based index
+            string input = Console.ReadLine();
+
+            try
+            {
+                if (input.ToLower() == "all")
+                {
+                    return Enumerable.Range(0, numberOfCampaigns).ToList(); // assume there are 6 campaigns
+                }
+                else
+                {
+                    List<int> selection = input.Split(',')
+                                        .Select(s => int.Parse(s.Trim()) - 1)
+                                        .ToList();
+
+                    if (selection.All(i => i >= 0 && i < numberOfCampaigns))
+                        return selection;
+                    else
+                        throw new IndexOutOfRangeException();
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid input. Please enter integers separated by commas.");
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine($"Invalid campaign number. Please enter numbers between 1 and {numberOfCampaigns}.");
+            }
         }
     }
-    
-    
-    
 
+    public int GetSortingAttribute(int numberOfAttributes)
+    {
+        while (true)
+        {
+            Console.WriteLine("\nSelect an attribute to sort by:");
+
+            string input = Console.ReadLine();
+
+            try
+            {
+                int index = int.Parse(input) - 1; // Subtract 1 to get zero-based index
+
+                if (index >= 0 && index < numberOfAttributes)
+                    return index;
+                else
+                    throw new IndexOutOfRangeException();
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid input. Please enter an integer.");
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine($"Invalid attribute number. Please enter a number between 1 and {numberOfAttributes}.");
+            }
+        }
+    }
+
+    public List<int> GetAttributeSelection(int numberOfAttributes)
+    {
+        while (true)
+        {
+            Console.WriteLine("\nSelect additional attributes to display (separate by comma, or 'all'):");
+
+            string input = Console.ReadLine();
+
+            try
+            {
+                if (input.ToLower() == "all")
+                {
+                    return Enumerable.Range(0, numberOfAttributes).ToList();
+                }
+                else
+                {
+                    List<int> selection = input.Split(',')
+                                        .Select(x => int.Parse(x.Trim()) - 1)
+                                        .ToList();
+
+                    if (selection.All(i => i >= 0 && i < numberOfAttributes))
+                        return selection;
+                    else
+                        throw new IndexOutOfRangeException();
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid input. Please enter integers separated by commas.");
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine($"Invalid attribute number. Please enter numbers between 1 and {numberOfAttributes}.");
+            }
+        }
+    }
 }
