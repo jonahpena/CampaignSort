@@ -8,7 +8,6 @@
 3. [Usage](#usage)
 4. [Testing](#testing)
 4. [Development](#development)
-    - [Running Tests](#running-tests)
     - [Adding a new attribute](#adding-a-new-attribute)
     - [Adding a new campaign](#adding-a-new-campaign)
 5. [Technology Stack](#technology-stack)
