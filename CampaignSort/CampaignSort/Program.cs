@@ -179,8 +179,8 @@ namespace CampaignSort
             {
                 foreach (var attribute in attributeSelection)
                 {
-                    PropertyInfo propertyInfo = typeof(Campaign).GetProperty(attribute);
-                    Console.WriteLine($"{attribute}: {propertyInfo.GetValue(campaign)}");
+                    var propertyInfo = typeof(Campaign).GetProperty(attribute);
+                    Console.WriteLine($"{attribute}: {propertyInfo!.GetValue(campaign)}");
                 }
                 Console.WriteLine("--------------------");  // Separator between campaigns
             }
