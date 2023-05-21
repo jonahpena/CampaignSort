@@ -6,6 +6,7 @@
 1. [Project Description](#project-description)
 2. [Getting Started](#getting-started)
 3. [Usage](#usage)
+4. [Testing](#testing)
 4. [Development](#development)
     - [Running Tests](#running-tests)
     - [Adding a new attribute](#adding-a-new-attribute)
@@ -54,15 +55,15 @@ Following, it will present a list of attributes. You'll be asked to select an at
 
 Once your selections have been made, the application will display your selected campaigns, sorted by the chosen attribute, and listing the attributes you selected.
 
-## Development
-
-### Running Tests
+## Testing
 
 This project uses NUnit for testing. To run the tests, navigate to the test project directory and use the following command:
 
 ```sh
 dotnet test
 ```
+
+## Development
 
 ### Adding a new attribute
 
