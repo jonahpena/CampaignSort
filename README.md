@@ -18,7 +18,7 @@
 
 ## Project Description
 
-The Marketing Campaign Sorter is a console-based application developed in C#. It enables the users to sort and display selected marketing campaign data based on various attributes. This application can be used for quick campaign comparisons and to get insights into campaign performance metrics. The goals of this project were to display my knowledge and use of TDD, OOP, SOLID, and clean code principles.
+The Marketing Campaign Sorter is a console-based application developed in C#. It enables the users to sort and display selected marketing campaign data based on various attributes. This application can be used for quick campaign comparisons and to get insights into campaign performance metrics. The application is structured using the MVC (Model-View-Controller) architectural pattern. This ensures separation of concerns, where Models manage the application data, Views handle the user interface and presentation, and Controllers act as intermediaries, handling the communication between Models and Views. The goals of this project were to display my knowledge and use of TDD, OOP, SOLID, MVC, and clean code principles.
 
 ## Getting Started
 
@@ -64,14 +64,26 @@ dotnet test
 
 ## Development
 
-### Adding a new attribute
+### Understanding the Project Structure
 
+The application follows the Model-View-Controller (MVC) pattern. 
+
+- Models: This directory contains classes that represent the data of the app. The main data class in our application is the `Campaign` class.
+- Views: This includes classes responsible for the user interface (console output in our case). `IUserInputInterface` and its implementations are part of this.
+- Controllers: These are classes that handle user input, manipulate the model, and cause the view to update. `CampaignSorter` can be seen as a part of this component.
+
+These components work together to provide a well-structured and scalable architecture for the application.
+
+These components work together to provide a well-structured and scalable architecture for the application.
+
+### Adding a new attribute
 To add a new attribute to the Campaign class, you need to:
 
 1. Add the new property to the Campaign class.
-2. Implement a new comparer in the `CampaignComparers` directory, ensuring it complies with the `ICampaignComparer` interface.
+2. Implement a new comparer in the `Controller/Comparers` directory, ensuring it complies with the `ICampaignComparer` interface.
 3. Modify the `CampaignComparerFactory` to return your new comparer when necessary.
-4. Update the Main function in Program.cs to include the new attribute in the attributes list.
+4. Update the Main function in `Program.cs` to include the new attribute in the attributes list.
+
 
 ### Adding a new campaign
 
@@ -80,10 +92,9 @@ Adding a new campaign is straightforward. Simply create a new instance of the Ca
 ## Technology Stack
 
 1. .NET 6.0: A free, cross-platform, open-source developer platform for building many different types of applications.
-
-1. C#: A modern, object-oriented programming language developed by Microsoft.
-
-1. NUnit: A unit-testing framework for all .Net languages.
+2. C#: A modern, object-oriented programming language developed by Microsoft.
+3. MVC: An architectural design pattern that separates an application into three main logical components: the Model, the View, and the Controller. This pattern helps to achieve separation of concerns.
+4. NUnit: A unit-testing framework for all .Net languages.
 
 ## Code Examples
 
