@@ -3987,32 +3987,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/jonahpena/.nuget/packages/": {}
+    "C:\\Users\\jonah\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Test/CampaignSort.Test.csproj",
+      "projectUniqueName": "C:\\Users\\jonah\\github\\CampaignSort\\CampaignSort\\CampaignSort.Test\\CampaignSort.Test.csproj",
       "projectName": "CampaignSort.Test",
-      "projectPath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Test/CampaignSort.Test.csproj",
-      "packagesPath": "/Users/jonahpena/.nuget/packages/",
-      "outputPath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort.Test/obj/",
+      "projectPath": "C:\\Users\\jonah\\github\\CampaignSort\\CampaignSort\\CampaignSort.Test\\CampaignSort.Test.csproj",
+      "packagesPath": "C:\\Users\\jonah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonah\\github\\CampaignSort\\CampaignSort\\CampaignSort.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jonahpena/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jonah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/CampaignSort.csproj": {
-              "projectPath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/CampaignSort.csproj"
+            "C:\\Users\\jonah\\github\\CampaignSort\\CampaignSort\\CampaignSort\\CampaignSort.csproj": {
+              "projectPath": "C:\\Users\\jonah\\github\\CampaignSort\\CampaignSort\\CampaignSort\\CampaignSort.csproj"
             }
           }
         }
@@ -4064,7 +4066,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

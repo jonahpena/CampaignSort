@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Zi6Jp32t6QOJ/Z16x4JuutniDNjbZ1lm1lzZgsvFt3aEtdeC5HsjzJvF/bdlZbqcxQqfRYcujE3BITgCCip0JQ==",
+  "dgSpecHash": "gccNrUwOLfQ0ybrU+g2UCcASgTr1Z0gdi44E5rjdHkjXPbqNZ3NymrK6cjLiKqgE+kJmLQR6wZ5toe9lpRHhQw==",
   "success": true,
-  "projectFilePath": "/Users/jonahpena/github/CampaignSort/CampaignSort/CampaignSort/CampaignSort.csproj",
+  "projectFilePath": "C:\\Users\\jonah\\github\\CampaignSort\\CampaignSort\\CampaignSort\\CampaignSort.csproj",
   "expectedPackageFiles": [
-    "/Users/jonahpena/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/Users/jonahpena/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
-    "/Users/jonahpena/.nuget/packages/nunit/3.13.0/nunit.3.13.0.nupkg.sha512"
+    "C:\\Users\\jonah\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jonah\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\jonah\\.nuget\\packages\\nunit\\3.13.0\\nunit.3.13.0.nupkg.sha512"
   ],
   "logs": []
 }
