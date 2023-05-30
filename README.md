@@ -74,8 +74,6 @@ The application follows the Model-View-Controller (MVC) pattern.
 
 These components work together to provide a well-structured and scalable architecture for the application.
 
-These components work together to provide a well-structured and scalable architecture for the application.
-
 ### Adding a new attribute
 To add a new attribute to the Campaign class, you need to:
 
@@ -83,7 +81,6 @@ To add a new attribute to the Campaign class, you need to:
 2. Implement a new comparer in the `Controller/Comparers` directory, ensuring it complies with the `ICampaignComparer` interface.
 3. Modify the `CampaignComparerFactory` to return your new comparer when necessary.
 4. Update the Main function in `Program.cs` to include the new attribute in the attributes list.
-
 
 ### Adding a new campaign
 
