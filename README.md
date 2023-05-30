@@ -1,5 +1,5 @@
 
-# Marketing Campaign Sorter
+# CampaignSort
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@
 
 ## Project Description
 
-The Marketing Campaign Sorter is a console-based application developed in C#. It enables the users to sort and display selected marketing campaign data based on various attributes. This application can be used for quick campaign comparisons and to get insights into campaign performance metrics. The application is structured using the MVC (Model-View-Controller) architectural pattern. This ensures separation of concerns, where Models manage the application data, Views handle the user interface and presentation, and Controllers act as intermediaries, handling the communication between Models and Views. The goals of this project were to display my knowledge and use of TDD, OOP, SOLID, MVC, and clean code principles.
+CampaignSort is a console-based application enabling users to sort and display selected marketing campaign data based on various attributes. This application can be used for quick campaign comparisons and to get insights into campaign performance metrics. The application is structured using the MVC (Model-View-Controller) architectural pattern. This ensures separation of concerns, where Models manage the application data, Views handle the user interface and presentation, and Controllers act as intermediaries, handling the communication between Models and Views. The goal of this project is to display my knowledge and use of TDD, OOP, SOLID, MVC, and clean code principles.
 
 ## Getting Started
 
