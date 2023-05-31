@@ -7,7 +7,8 @@ namespace CampaignSort
     
     {
         static void Main(string[] args)
-        {
+        {     
+            Console.Clear();
             IUserInputInterface userInput = new ConsoleUserInputInterface();
             
             int numberOfAttributes = typeof(Campaign).GetProperties().Length;

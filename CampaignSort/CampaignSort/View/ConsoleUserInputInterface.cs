@@ -5,6 +5,7 @@ public class ConsoleUserInputInterface : IUserInputInterface
     {
         while (true)
         {
+            
             Console.WriteLine(
                 "\nEnter the number(s) of the campaigns you're interested in, separated by commas, or 'all' for all campaigns:");
 
